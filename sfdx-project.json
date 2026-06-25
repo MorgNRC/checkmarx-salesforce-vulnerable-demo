@@ -1,0 +1,11 @@
+﻿{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "Checkmarx Salesforce Vulnerable Demo",
+  "namespace": "",
+  "sourceApiVersion": "60.0"
+}

@@ -1,0 +1,8 @@
+﻿<template>
+    <lightning-card title="Customer Search">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Customer Name" value={userInput} onchange={handleChange}></lightning-input>
+            <div class="result" lwc:dom="manual"></div>
+        </div>
+    </lightning-card>
+</template>
