@@ -1,10 +1,17 @@
-﻿import { LightningElement } from "lwc";
+﻿import { LightningElement, api } from "lwc";
 
 export default class Vulnerabledemo extends LightningElement {
-    userInput = "";
+    @api userInput;
+
+    renderedCallback() {
+        const container = this.template.querySelector(".result");
+
+        if (container) {
+            container.innerHTML = this.userInput;
+        }
+    }
 
     handleChange(event) {
         this.userInput = event.target.value;
-        this.template.querySelector(".result").innerHTML = this.userInput;
     }
 }
